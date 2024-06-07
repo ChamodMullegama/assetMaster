@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper-c27b6911.js";import{b as c,h as t}from"./app-d8ea3ead.js";const e={},r={src:"/img/logo/logo2.png",alt:"ASSET MASTER"};function n(s,_){return c(),t("img",r)}const m=o(e,[["render",n]]);export{m as A};
