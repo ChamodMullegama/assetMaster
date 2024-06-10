@@ -489,7 +489,6 @@ const changeImageStatus = async (id) => {
         await axios.get(route("product.images.status", id));
         alert("Image Status changed successfully");
         getProductImages();
-        consol;
     } catch (error) {
         console.error(error.message);
     }
