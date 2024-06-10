@@ -89,4 +89,16 @@ class ProductServices
         $product_image->save();
     }
 
+    public function deleteImage($image_id)
+    {
+        $product_image = $this->product_image->find($image_id);
+        
+        if ($product_image->is_primary == 1) {
+            throw new \Exception("Cannot delete the primary image.");
+        } else {
+            $product_image->delete();
+        }
+    }
+    
+
 }

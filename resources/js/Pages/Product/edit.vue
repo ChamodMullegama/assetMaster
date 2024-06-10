@@ -384,6 +384,16 @@
                                                                         class="fas fa-ban"
                                                                     ></i>
                                                                 </a>
+                                                                <a
+                                                                    @click="
+                                                                        imageDelete(image.id)
+                                                                    "
+                                                                    class="btn me-2"
+                                                                >
+                                                                    <i
+                                                                        class="fas fa-trash"
+                                                                    ></i>
+                                                                </a>
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -448,13 +458,15 @@ const updateProduct = async () => {
 };
 
 const deleteProduct = async () => {
-    try {
-        await axios.delete(route("product.delete", props.productId));
-        alert("Product deleted successfully");
-        window.location.href = route("product.index");
-    } catch (error) {
-        alert("Failed to delete product");
-        console.error(error.message);
+    if (confirm("Are you sure you want to delete this product?")) {
+        try {
+            await axios.delete(route("product.delete", props.productId));
+            alert("Product deleted successfully");
+            window.location.href = route("product.index");
+        } catch (error) {
+            alert("Failed to delete product");
+            console.error(error.message);
+        }
     }
 };
 
@@ -494,8 +506,22 @@ const changeImageStatus = async (id) => {
     }
 };
 
+const imageDelete = async (id) => {
+    if (confirm("Are you sure you want to delete this image?")) {
+        try {
+            await axios.delete(route("product.images.delete", id));
+            alert("Image deleted successfully");
+            getProductImages();
+        } catch (error) {
+            alert("Failed to delete image the image is primary image "); 
+            console.error(error.message);
+        }
+    }
+}
+
 onMounted(() => {
     getProduct();
     getProductImages();
 });
 </script>
+

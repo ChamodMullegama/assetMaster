@@ -72,4 +72,13 @@ class ProductController extends Controller
         return ProductFacade::imageStatus($image_id);
     }
 
+    public function imageDelete($image_id)
+    {
+     
+        return  ProductFacade::deleteImage($image_id);
+  
+
+    }
+    
+
 }

@@ -42,4 +42,8 @@ Route::prefix('product')->group(function () {
     Route::post('/{product_id}/upload-images', [ProductController::class, 'uploadImages'])->name('product.upload_images');
     Route::get('/{product_id}/images', [ProductController::class, 'getImages'])->name('product.images.get');
     Route::get('/imageStatus/{image_id}', [ProductController::class, 'imageStatus'])->name('product.images.status');
+    Route::delete('/product/{image_id}/delete', [ProductController::class, "imageDelete"])->name('product.images.delete');
+
+
+
 });
