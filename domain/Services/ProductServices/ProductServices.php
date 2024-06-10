@@ -92,10 +92,8 @@ class ProductServices
     public function deleteImage($image_id)
     {
         $product_image = $this->product_image->find($image_id);
-        
-        if ($product_image->is_primary == 1) {
-            throw new \Exception("Cannot delete the primary image.");
-        } else {
+    
+        if ($product_image && $product_image->is_primary != 1) {
             $product_image->delete();
         }
     }
