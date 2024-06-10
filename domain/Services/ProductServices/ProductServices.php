@@ -76,10 +76,11 @@ class ProductServices
 
     public function imageStatus($image_id)
     {
-
         $product_image = $this->product_image->find($image_id);
+
         if ($product_image->is_primary == 0) {
-            $this->product_image->where('is_primary', 1)->update(['is_primary' => 0]);
+            $product_id = $product_image->product_id;
+            $this->product_image->where('product_id', $product_id)->where('is_primary', 1)->update(['is_primary' => 0]);
             $product_image->is_primary = 1;
         } else {
             $product_image->is_primary = 0;

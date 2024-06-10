@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f71d79850462cc100641e52e0806435e66879a7d',
+        'reference' => 'fc6a1f49fb15f8fc06d656204573c44892ffbbdb',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'aws/aws-sdk-php' => array(
-            'pretty_version' => '3.310.0',
-            'version' => '3.310.0.0',
-            'reference' => '8ac02d36c609c6507136e5996f60cfd5152b4fd7',
+            'pretty_version' => '3.311.2',
+            'version' => '3.311.2.0',
+            'reference' => '731cd73062909594c5f7443413c4c4c40ed1c25c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../aws/aws-sdk-php',
             'aliases' => array(),
@@ -418,7 +418,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f71d79850462cc100641e52e0806435e66879a7d',
+            'reference' => 'fc6a1f49fb15f8fc06d656204573c44892ffbbdb',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -701,9 +701,9 @@
             'dev_requirement' => true,
         ),
         'phpunit/phpunit' => array(
-            'pretty_version' => '11.1.3',
-            'version' => '11.1.3.0',
-            'reference' => 'd475be032238173ca3b0a516f5cc291d174708ae',
+            'pretty_version' => '11.2.0',
+            'version' => '11.2.0.0',
+            'reference' => '705eba0190afe04bc057f565ad843267717cf109',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
@@ -811,8 +811,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '3.0.0',
+                0 => '3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -831,9 +831,9 @@
             ),
         ),
         'psy/psysh' => array(
-            'pretty_version' => 'v0.12.3',
-            'version' => '0.12.3.0',
-            'reference' => 'b6b6cce7d3ee8fbf31843edce5e8f5a72eff4a73',
+            'pretty_version' => 'v0.12.4',
+            'version' => '0.12.4.0',
+            'reference' => '2fd717afa05341b4f8152547f142cd2f130f6818',
             'type' => 'library',
             'install_path' => __DIR__ . '/../psy/psysh',
             'aliases' => array(),
