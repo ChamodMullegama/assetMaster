@@ -1,1 +1,0 @@
-import{b as n,h as r,D as s}from"./app-d8ea3ead.js";const o=["type"],c={__name:"PrimaryButton",props:{type:{type:String,default:"submit"}},setup(t){return(e,a)=>(n(),r("button",{type:t.type,class:"btn btn-sm btn-outline-primary"},[s(e.$slots,"default")],8,o))}};export{c as _};
